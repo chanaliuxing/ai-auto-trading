@@ -1,0 +1,31 @@
+[project]
+name = "ai-auto-trading"
+version = "0.1.0"
+description = "Autonomous AI Stock & Option Trading System powered by Multi-LLM Reasoning, Real-Time Memory, and Interactive Brokers Execution"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Wei Zhang", email = "wei.zhang@example.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "nest-asyncio>=1.5.8",
+    "pyyaml>=6.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "pytz>=2023.3",
+    "openai>=1.12.0",
+    "google-generativeai>=0.3.0",
+    "httpx>=0.26.0",
+    "yfinance>=0.2.36",
+    "feedparser>=6.0.10",
+    "clickhouse-connect>=0.7.0",
+    "redis>=5.0.0",
+    "ib-insync>=0.9.86",
+    "pydantic>=2.5.0",
+    "structlog>=24.1.0",
+]
+
+[tool.setuptools]
+packages = ["llm_trader"]
